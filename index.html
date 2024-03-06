@@ -13,6 +13,7 @@
 
     <!-- External stylesheets -->
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,31 +33,60 @@
 
     <header>
 
-        <nav>
+        <div class="header-left">
+            <i class="fa-solid fa-code fa-xl"></i>
+            <span class="header-logo-title">LearnWithPushkar</span>
+        </div>
 
-            <div class="nav-left">
-                <i class="fa-solid fa-code fa-xl"></i>
-                <span class="nav-logo-title">LearnWithPushkar</span>
-            </div>
+        <div class="header-right">
 
-            <div class="nav-right">
+            <div class="header-right-desktop-item">
 
-                <div class="nav-links">
+                <div class="header-links">
                     <a href="#">Courses</a>
                     <a href="#">Featured</a>
                     <a href="#">Blog</a>
                     <a href="#">Contact</a>
                 </div>
 
-                <div class="nav-3dot-div">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
+                <img src="https://cdn-icons-png.freepik.com/512/2044/2044202.png?filename=cloudy_2044202.png&fd=1"
+                    height="42" alt="">
 
             </div>
 
-        </nav>
+            <div class="header-3dot-div">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </div>
 
     </header>
+
+    <nav>
+
+        <div class="nav-home-button-div">
+            <i class="fa-solid fa-house"></i>
+        </div>
+
+        <div class="nav-links">
+            <a href="#">CSS</a>
+            <a href="#">JavaScript</a>
+            <a href="#">JQuery</a>
+            <a href="#">Shery.js</a>
+            <a href="#">React.js</a>
+            <a href="#">Node.js</a>
+        </div>
+
+        <div class="nav-search-button-div">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div class="search-expanded-div">
+            <input type="text" name="searchQuery" id="" placeholder="Search" class="nav-search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+    </nav>
 
     <section id="hero-section">
 
