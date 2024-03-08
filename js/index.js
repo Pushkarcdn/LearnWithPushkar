@@ -8,13 +8,16 @@ navSearchButton.addEventListener('click', () => {
     searchExpandedDiv.style.visibility = 'visible';
 });
 
-mobileNav.style.left = "-350px";
+// mobile nav
 
-expandMenuButton.addEventListener('click', () => {
+function openMobileNav() {
+    mobileNav.style.right = '0px';
+    mobileNavStatus = true;
+}
 
-    if (mobileNav.style.left == "-350px") {
-        mobileNav.style.left = '-1px';
-    } else {
-        mobileNav.style.left = '-350px';
-    }
-});
+function closeMobileNav() {
+    mobileNav.style.right = '-350px';
+    mobileNavStatus = false;
+}
+
+// openMobileNav();

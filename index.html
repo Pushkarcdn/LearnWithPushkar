@@ -34,7 +34,7 @@
     <header>
 
         <div class="header-left">
-            <i class="fa-solid fa-code fa-xl"></i>
+            <img src="./public/images/layers.png" height="25px" alt="">
             <span class="header-logo-title">LearnWithPushkar</span>
         </div>
 
@@ -50,12 +50,12 @@
                 </div>
 
                 <img src="https://cdn-icons-png.freepik.com/512/2044/2044202.png?filename=cloudy_2044202.png&fd=1"
-                    height="42" alt="">
+                    height="42" alt=""></img>
 
             </div>
 
             <div class="header-3dot-div">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars" onclick="openMobileNav()"></i>
             </div>
         </div>
 
@@ -65,9 +65,13 @@
 
         <div class="mobile-nav-top">
 
-            <span class="mobile-nav-top-title">Explore</span>
+            <div class="mobile-nav-top-head">
+                <span class="mobile-nav-top-title">Explore</span>
+                <i class="fa-solid fa-xmark fa-xl" onclick="closeMobileNav()"></i>
+            </div>
+
             <hr class="mobile-nav-hr">
-            <!-- <i class="fa-solid fa-xmark fa-xl"></i> -->
+
         </div>
 
 
@@ -111,19 +115,30 @@
 
     <section id="hero-section">
 
-        <div class="hero-section-left">
+        <div class="hero-section-main-div">
 
-            <div class="hero-section-left-text">
-                <span class="hero-left-suptext">Become a </span>
-                <span class="hero-left-text varela">FULL STACK </span>
-                <span class="hero-left-text varela">DEVELOPER </span>
-                <button class="hero-section-btn">Explore Courses</button>
+            <div class="hero-section-left">
+
+                <div class="hero-section-left-text">
+                    <span class="hero-left-suptext">Become a </span>
+                    <span class="hero-left-text varela">FULL STACK </span>
+                    <span class="hero-left-text varela">DEVELOPER </span>
+                    <button class="hero-section-btn">Explore Courses</button>
+                </div>
+
+            </div>
+
+            <div class="hero-section-right">
+                <img src="./public/images/learning.svg" width="90%" alt="">
             </div>
 
         </div>
 
-        <div class="hero-section-right">
-            <img src="./public/images/learning.svg" width="90%" alt="">
+        <div class="hero-section-swipe-div">
+            <i class="fa-solid fa-chevron-up"></i>
+            <span>
+                Swipe up
+            </span>
         </div>
 
     </section>
