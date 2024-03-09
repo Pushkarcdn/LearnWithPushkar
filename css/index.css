@@ -39,12 +39,17 @@ a:hover {
 }
 
 body {
-    height: 200vh;
     min-width: 300px;
+    width: 100%;
+    height: 400vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
     background-color: rgb(243, 243, 243);
+    width: 100%;
     height: 75px;
     display: flex;
     align-items: center;
@@ -167,6 +172,7 @@ header {
 
 nav {
     height: 65px;
+    width: 100%;
     padding: 0px 30px;
     position: sticky;
     top: -2px;
@@ -214,6 +220,9 @@ nav i {
 
 #hero-section {
     /* border: 2px solid red; */
+    width: 100%;
+    min-height: 500px;
+    /* padding: 0px 10%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -221,6 +230,7 @@ nav i {
     flex-wrap: wrap;
     height: calc(100vh - 140px);
     position: relative;
+    background-color: #fafafa;
 }
 
 .hero-section-main-div {
@@ -260,18 +270,29 @@ nav i {
     background-clip: text;
 }
 
+.hero-section-left-courses-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0px;
+    font-size: 0.9rem;
+}
+
 .hero-section-btn {
     margin: 25px 0px;
     width: 150px;
-    height: 45px;
+    display: inline;
+    /* height: 45px; */
     background-color: transparent;
     transition: all 0.1s ease-in;
     outline: none;
+    border: none;
+    text-align: left;
 }
 
 .hero-section-btn:hover {
-    background-color: #312f2f;
-    color: white;
+    /* background-color: #312f2f; */
+    /* color: white; */
 }
 
 .hero-section-right {
@@ -293,4 +314,167 @@ nav i {
     align-items: center;
     gap: 10px;
     opacity: 0.75;
+}
+
+/* -------------------------------------------------- */
+
+
+/* -------------------------------------------------- */
+
+.second-section {
+    /* border: 2px solid; */
+    padding: 75px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    /* width: 80%; */
+}
+
+.second-section-top {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.second-section-text-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.second-section-upper-label {
+    opacity: 0.6;
+}
+
+.second-section-upper-title {
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.second-section-cards-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.second-section-cards-desc {
+    text-align: center;
+    padding: 0px 25px;
+    opacity: 0.6;
+}
+
+.second-section-cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.second-section-card {
+    /* border: 2px solid; */
+    min-height: 320px;
+    width: 300px;
+    padding: 35px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+    box-shadow: rgba(147, 147, 147, 0.4) 0px 1px 15px 1px;
+    border-radius: 6px;
+}
+
+.second-section-card>img {
+    border-radius: 6px;
+    width: 100%;
+    height: 150px;
+}
+
+.second-section-card div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    max-width: 90%;
+}
+
+.second-section-card span {
+    line-height: 1.5;
+}
+
+.second-section-card-title {
+    font-size: 1.3rem;
+}
+
+.second-section-card-desc {
+    font-size: 0.9rem;
+    opacity: 0.6;
+}
+
+.second-section-enroll-btn {
+    margin: 15px 0px;
+    width: 120px;
+    height: 42px;
+    background-color: #4b64bb;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    transition: all 0.1s ease-in;
+}
+
+.second-section-enroll-btn:hover {
+    background-color: #00438f;
+    color: white;
+}
+
+.second-section-bottom {
+    /* border: 2px solid red; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.second-section-bottom-right {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 40%;
+}
+
+.second-section-bottom-right-title-div {
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+}
+
+
+
+
+
+.second-section-bottom-right-link-div {
+    display: flex;
+    gap: 45px;
+}
+
+.second-section-bottom-btn {
+    margin: 25px 0px;
+    width: 150px;
+    height: 45px;
+    background-color: transparent;
+    transition: all 0.1s ease-in;
+    outline: none;
+}
+
+.second-section-bottom-btn:hover {
+    background-color: #312f2f;
+    color: white;
 }
