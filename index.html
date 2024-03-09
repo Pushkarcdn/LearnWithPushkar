@@ -33,17 +33,19 @@
 
     <header>
 
-        <div class="header-left">
-            <img src="./public/images/layers.png" height="25px" alt="">
-            <span class="header-logo-title">LearnWithPushkar</span>
-        </div>
+        <a href="#hero-section">
+            <div class="header-left">
+                <img src="./public/images/layers.png" height="25px" alt="">
+                <span class="header-logo-title">LearnWithPushkar</span>
+            </div>
+        </a>
 
         <div class="header-right">
 
             <div class="header-right-desktop-item">
 
                 <div class="header-links">
-                    <a href="#">Courses</a>
+                    <a href="#courses-section">Courses</a>
                     <a href="#">Featured</a>
                     <a href="#">Blog</a>
                     <a href="#">Contact</a>
@@ -79,19 +81,22 @@
 
 
 
-            <a class="mobile-nav-link-active-page" href="#">Courses</a>
-            <a href="#">Featured</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
+            <a href="#hero-section" class="mobile-nav-link-active-page" onclick="closeMobileNav()">Home</a>
+            <a href="#courses-section" onclick="closeMobileNav()">Courses</a>
+            <a href="#" onclick="closeMobileNav()">Featured</a>
+            <a href="#" onclick="closeMobileNav()">Blog</a>
+            <a href="#" onclick="closeMobileNav()">Contact</a>
         </div>
 
     </div>
 
     <nav>
 
-        <div class="nav-home-button-div">
-            <i class="fa-solid fa-house"></i>
-        </div>
+        <a href="#hero-section">
+            <div class="nav-home-button-div">
+                <i class="fa-solid fa-house"></i>
+            </div>
+        </a>
 
         <div class="nav-links">
             <a href="#">CSS</a>
