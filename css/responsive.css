@@ -107,17 +107,43 @@
         font-size: 0.8rem;
     }
 
+    footer span,
+    footer p,
+    footer a,
+    .footer-column-div {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .news-letter-form {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .newsletter-email-input {
+        width: 250px;
+    }
+
+    footer img {
+        width: 260px;
+    }
+
+    .footer-lower {
+        font-size: 0.75rem;
+    }
+
 }
 
 @media screen and (max-width: 350px) {
 
     header {
         height: 65px;
-        padding: 0px 15px;
     }
 
     .header-logo-title {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .hero-left-text {
@@ -125,12 +151,20 @@
     }
 
     .second-section-card {
-        width: 90%;
+        width: 95%;
     }
 
     .second-section-card>img {
-        width: 90%;
+        width: 100%;
         height: 130px;
+    }
+
+    .footer-upper {
+        overflow: hidden;
+    }
+
+    .newsletter-email-input {
+        width: 95%;
     }
 
 }
