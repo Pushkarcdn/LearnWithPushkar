@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
+
     <!-- meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="web development course">
+    <meta name="description" content="best web development course">
     <meta name="author" content="Pushkar Kumar Sah">
 
     <!-- page title -->
@@ -34,6 +35,8 @@
 
 <body>
 
+    <!------------------------------------------- Header Starts ----------------------------------------------->
+
     <header>
 
         <a href="#hero-section">
@@ -49,9 +52,9 @@
 
                 <div class="header-links">
                     <a href="#courses-section">Courses</a>
-                    <a href="#">Featured</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Contact</a>
+                    <a href="#featured-section">Featured</a>
+                    <a href="#alumnies-section">Alumnies</a>
+                    <a href="#projects-section">My Projects</a>
                 </div>
 
                 <img src="https://cdn-icons-png.freepik.com/512/2044/2044202.png?filename=cloudy_2044202.png&fd=1"
@@ -67,28 +70,10 @@
 
     </header>
 
-    <div class="mobile-nav">
+    <!--------------------------------------------- Header ends ------------------------------------------------>
 
-        <div class="mobile-nav-top">
 
-            <div class="mobile-nav-top-head">
-                <span class="mobile-nav-top-title">Explore</span>
-                <i class="fa-solid fa-xmark fa-xl" onclick="closeMobileNav()"></i>
-            </div>
-
-            <hr class="mobile-nav-hr">
-
-        </div>
-
-        <div class="mobile-nav-links">
-            <a href="#hero-section" class="mobile-nav-link-active-page" onclick="closeMobileNav()">Home</a>
-            <a href="#courses-section" onclick="closeMobileNav()">Courses</a>
-            <a href="#" onclick="closeMobileNav()">Featured</a>
-            <a href="#" onclick="closeMobileNav()">Blog</a>
-            <a href="#" onclick="closeMobileNav()">Contact</a>
-        </div>
-
-    </div>
+    <!---------------------------------------------- Nav Starts ------------------------------------------------>
 
     <nav>
 
@@ -117,6 +102,39 @@
         </div>
 
     </nav>
+
+    <!----------------------------------------------- Nav ends ------------------------------------------------->
+
+
+    <!------------------------------------------- Mobile nav Starts -------------------------------------------->
+
+    <div class="mobile-nav">
+
+        <div class="mobile-nav-top">
+
+            <div class="mobile-nav-top-head">
+                <span class="mobile-nav-top-title">Explore</span>
+                <i class="fa-solid fa-xmark fa-xl" onclick="closeMobileNav()"></i>
+            </div>
+
+            <hr class="mobile-nav-hr">
+
+        </div>
+
+        <div class="mobile-nav-links">
+            <a href="#hero-section" class="mobile-nav-link-active-page" onclick="closeMobileNav()">Home</a>
+            <a href="#courses-section" onclick="closeMobileNav()">Courses</a>
+            <a href="#featured-section" onclick="closeMobileNav()">Featured</a>
+            <a href="#alumnies-section" onclick="closeMobileNav()">Alumnies</a>
+            <a href="#projects-section" onclick="closeMobileNav()">My Projects</a>
+        </div>
+
+    </div>
+
+    <!------------------------------------------- Mobile nav ends ----------------------------------------------->
+
+
+    <!------------------------------------------ Hero section Starts -------------------------------------------->
 
     <section id="hero-section">
 
@@ -147,13 +165,16 @@
         <div class="hero-section-swipe-div">
 
             <i class="fa-solid fa-chevron-up"></i>
-            <span>
-                Swipe up
-            </span>
+            <a href="#courses-section">Explore more</a>
 
         </div>
 
     </section>
+
+    <!------------------------------------------ Hero section ends ----------------------------------------------->
+
+
+    <!---------------------------------------- Courses section starts -------------------------------------------->
 
     <section class="second-section" id="courses-section">
 
@@ -227,7 +248,7 @@
 
         </div>
 
-        <div class="second-section-bottom">
+        <div class="second-section-bottom" id="featured-section">
 
             <img src="./public/images/web.png" width="50%" alt="">
 
@@ -240,8 +261,8 @@
                 </div>
 
                 <div class="second-section-bottom-right-link-div">
-                    <a href="#">More details</a>
-                    <a href="#">LINK</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
                     <a href="#">Learn more</a>
                 </div>
 
@@ -282,7 +303,12 @@
 
     </section>
 
-    <section class="third-section">
+    <!------------------------------------------ Courses section ends --------------------------------------------->
+
+
+    <!----------------------------------------- Alumnies section starts ------------------------------------------->
+
+    <section class="third-section" id="alumnies-section">
 
         <div class="third-section-inner">
 
@@ -295,7 +321,7 @@
 
                 <div class="third-section-inner-card">
 
-                    <img src="./public/images/person3.png" alt="">
+                    <img src="./public/images/person2.png" alt="">
 
                     <div class="third-section-inner-card-details">
                         <span class="third-section-inner-card-title">Shivam Thakur</span>
@@ -304,7 +330,6 @@
 
                 </div>
 
- 
                 <div class="third-section-inner-card">
 
                     <img src="./public/images/person4.png" alt="">
@@ -316,19 +341,17 @@
 
                 </div>
 
- 
                 <div class="third-section-inner-card">
 
-                    <img src="./public/images/person2.png" alt="">
+                    <img src="./public/images/person3.png" alt="">
 
                     <div class="third-section-inner-card-details">
-                        <span class="third-section-inner-card-title">Binayak Prajapati</span>
+                        <span class="third-section-inner-card-title">Bishal Shah</span>
                         <span class="third-section-inner-card-desc">JQuery Developer <br> ING Pvt. </span>
                     </div>
 
                 </div>
 
- 
                 <div class="third-section-inner-card">
 
                     <img src="./public/images/person1.png" alt="">
@@ -340,31 +363,27 @@
 
                 </div>
 
- 
                 <div class="third-section-inner-card">
 
                     <img src="./public/images/person6.png" alt="">
 
                     <div class="third-section-inner-card-details">
-                        <span class="third-section-inner-card-title">Shivam Thakur</span>
+                        <span class="third-section-inner-card-title">Binayak Prajapati</span>
                         <span class="third-section-inner-card-desc">JavaScript Developer <br> ING Pvt. </span>
                     </div>
 
                 </div>
 
- 
                 <div class="third-section-inner-card">
 
                     <img src="./public/images/person5.png" alt="">
 
                     <div class="third-section-inner-card-details">
-                        <span class="third-section-inner-card-title">Babin Rai</span>
+                        <span class="third-section-inner-card-title">Supreme Giri</span>
                         <span class="third-section-inner-card-desc">JavaScript Developer <br> ING Pvt. </span>
                     </div>
 
                 </div>
-
- 
 
             </div>
 
@@ -373,6 +392,116 @@
         </div>
 
     </section>
+
+    <!------------------------------------------ Alumnies section ends --------------------------------------------->
+
+
+    <!------------------------------------------ Project section starts -------------------------------------------->
+
+    <section class="forth-section">
+
+        <div class="forth-section-video-div">
+
+            <video autoplay muted>
+                <source src="https://youtu.be/wWBsBaIO5Lw?si=wXL32kTQ9qECBqnY" type="video/mp4">
+                <source src="./public/videos/production_id_4393362 (1080p).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <video autoplay muted>
+                <source src="https://youtu.be/wWBsBaIO5Lw?si=wXL32kTQ9qECBqnY" type="video/mp4">
+                <source src="./public/videos/pexels-mikhail-nilov-7989682 (Original).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+        </div>
+
+        <div class="forth-section-images-div">
+            <img src="./public/images/MongoDB.jpg" alt="">
+            <img src="./public/images/express-js-min-1024x576.jpg" alt="">
+            <img src="./public/images/react.jpg" alt="">
+            <img src="./public/images/1200px-Node.js_logo.svg.png" alt="">
+        </div>
+
+        <div class="forth-section-text-div" id="projects-section">
+            <span class="forth-section-text-label">Top</span>
+            <span class="forth-section-text-title">Highlighted Projects</span>
+        </div>
+
+        <div class="forth-section-project-cards-div">
+
+            <div class="forth-section-project-card forth-section-card-1">
+
+                <div class="forth-section-project-card-inner">
+
+                    <div class="forth-section-inner-text">
+                        <span class="forth-section-card-label">Service</span>
+                        <span class="forth-section-card-title">Secret Messaging Service</span>
+                    </div>
+
+                    <span class="forth-section-card-date">04 - 2023</span>
+
+                    <p class="forth-section-card-desc">Confidentiality at its core.</p>
+
+                    <a target="_blank" class="forth-section-card-link" href="https://fep1.pushkar.eu.org/">Have a
+                        look!
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="forth-section-project-card forth-section-card-2">
+
+                <div class="forth-section-project-card-inner">
+
+                    <div class="forth-section-inner-text">
+                        <span class="forth-section-card-label">Game</span>
+                        <span class="forth-section-card-title">The 90's Simon Game</span>
+                    </div>
+
+                    <span class="forth-section-card-date">06 - 2023</span>
+
+                    <p class="forth-section-card-desc">Memory challenge. How far can you go ?</p>
+
+                    <a target="_blank" class="forth-section-card-link" href="https://fep4.pushkar.eu.org/">Have a
+                        look!
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="forth-section-project-card forth-section-card-3">
+
+                <div class="forth-section-project-card-inner">
+
+                    <div class="forth-section-inner-text">
+                        <span class="forth-section-card-label">App</span>
+                        <span class="forth-section-card-title">News Reading App</span>
+                    </div>
+
+                    <span class="forth-section-card-date">08 - 2023</span>
+
+                    <p class="forth-section-card-desc">Your favorite topics directly on your ears.</p>
+
+                    <a target="_blank" class="forth-section-card-link"
+                        href="https://github.com/Pushkarcdn/Python_NewsApp">Have a
+                        look!
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!------------------------------------------ Project section ends ---------------------------------------------->
+
+
+    <!---------------------------------------------- Footer starts ------------------------------------------------->
 
     <footer id="footer">
 
@@ -397,20 +526,21 @@
 
             </div>
 
-
             <div class="footer-column-div footer-link-column">
 
                 <div>
+
                     <span class="footer-column-links-title">About</span>
 
                     <div class="footer-column-links">
-                        <a href="">Visit Website</a>
-                        <a href="">My Resume</a>
-                        <a href="">Linkedin</a>
-                        <a href="">GitHub</a>
-                        <a href="">Facebook</a>
-                        <a href="">Instagram</a>
-                        <a href="">Whatsapp</a>
+                        <a target="_blank" href="https://pushkar.com.np">Visit Website</a>
+                        <a target="_blank" href="https://projects.pushkar.com.np/Docs/Pushkar_Kumar_Sah_CV.pdf">My
+                            Resume</a>
+                        <a target="_blank" href="https://linkedin.com/in/pushkarcdn">Linkedin</a>
+                        <a target="_blank" href="https://github.com/pushkarcdn">GitHub</a>
+                        <a target="_blank" href="https://facebook.com/pushkarcdn">Facebook</a>
+                        <a target="_blank" href="https://instagram.com/pushkarcdn">Instagram</a>
+                        <a target="_blank" href="https://wa.me/9779844187887">Whatsapp</a>
                     </div>
 
                 </div>
@@ -420,16 +550,17 @@
             <div class="footer-column-div footer-link-column">
 
                 <div>
+
                     <span class="footer-column-links-title">My Projects</span>
 
                     <div class="footer-column-links">
-                        <a href="">Secret Messaging Service</a>
-                        <a href="">Online Store</a>
-                        <a href="">News Radio - Python</a>
-                        <a href="">Amazon Clone</a>
-                        <a href="">90's Simon Game</a>
-                        <a href="">Quiz app - Python</a>
-                        <a href="">See more</a>
+                        <a target="_blank" href="https://fsp1.pushkar.eu.org/">Secret Messaging Service</a>
+                        <a target="_blank" href="https://fep5.pushkar.eu.org/">Online Store</a>
+                        <a target="_blank" href="https://github.com/Pushkarcdn/Python_NewsApp">News Radio - Python</a>
+                        <a target="_blank" href="https://fep1.pushkar.eu.org/">Amazon Clone</a>
+                        <a target="_blank" href="https://fep4.pushkar.eu.org/">90's Simon Game</a>
+                        <a target="_blank" href="https://github.com/Pushkarcdn/Python_QuizApp">Quiz app - Python</a>
+                        <a target="_blank" href="https://github.com/pushkarcdn">See more</a>
                     </div>
 
                 </div>
@@ -464,6 +595,9 @@
         </div>
 
     </footer>
+
+    <!----------------------------------------------- Footer ends -------------------------------------------------->
+
 
     <script src="./js/index.js"></script>
 

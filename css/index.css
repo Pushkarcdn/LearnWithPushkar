@@ -559,7 +559,245 @@ nav i {
 /* -------------------------- Second Section ends here --------------------------- */
 
 
-/* -------------------------- Footer starts here --------------------------- */
+/* ---------------------------- Third section starts here ------------------------------- */
+
+.third-section {
+    padding: 75px 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #fafafa;
+}
+
+.third-section-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+    width: 100%;
+    max-width: 950px;
+}
+
+.third-section-inner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.third-section-inner-text-label {
+    opacity: 0.75;
+    letter-spacing: 1px;
+}
+
+.third-section-inner-text-title {
+    font-size: 2.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.third-section-inner-cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.third-section-inner-card {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.third-section-inner-card>img {
+    width: 85%;
+}
+
+.third-section-inner-card-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background-color: white;
+    padding: 18px 25px;
+    box-shadow: rgba(147, 147, 147, 0.4) 0px 1px 12px 1px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.third-section-inner-card-title {
+    letter-spacing: 1px;
+    font-weight: 420;
+}
+
+.third-section-inner-card-desc {
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    opacity: 0.8;
+}
+
+/* ------------------ Third section ends here ------------------- */
+
+
+/* ----------------- Forth section starts here -------------------- */
+
+.forth-section {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0px 15px 150px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forth-section-video-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 70px 0px 50px 0px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.forth-section-video-div>video {
+    min-width: 280px;
+    max-width: 500px;
+    border-radius: 13px;
+}
+
+.forth-section-images-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 0px;
+}
+
+.forth-section-images-div>img {
+    width: 250px;
+}
+
+.forth-section-text-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0px 30px 0px;
+    gap: 10px;
+}
+
+.forth-section-text-label {
+    opacity: 0.75;
+}
+
+.forth-section-text-title {
+    font-size: 1.4rem;
+    font-weight: 450;
+    letter-spacing: 0.8px;
+}
+
+.forth-section-project-cards-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 60px 0px;
+}
+
+.forth-section-project-card {
+    margin: 0px 0px 30px 0px;
+    position: relative;
+    min-width: 265px;
+    max-width: 320px;
+    width: 95%;
+    height: 310px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+}
+
+.forth-section-card-1 {
+    background-image: url("../public/images/encryption.jpeg");
+}
+
+.forth-section-card-2 {
+    background-image: url("../public/images/OIP.jpeg");
+}
+
+.forth-section-card-3 {
+    background-image: url("../public/images/Image_5.webp");
+}
+
+.forth-section-project-card:hover {
+    .forth-section-project-card-inner {
+        opacity: 1;
+    }
+}
+
+.forth-section-project-card-inner {
+    width: 240px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(147, 147, 147, 0.4) 0px 1px 20px 1px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -100px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    letter-spacing: 0.5px;
+    transition: all 0.25s ease-in-out;
+    opacity: 0;
+    /* Initial state - opacity is set to 0*/
+}
+
+.forth-section-inner-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.forth-section-card-label {
+    font-size: 0.9rem;
+    opacity: 0.6;
+}
+
+.forth-section-card-title {
+    font-size: 1.2rem;
+}
+
+.forth-section-card-date {
+    font-size: 0.85rem;
+    opacity: 0.6;
+}
+
+.forth-section-card-desc {
+    opacity: 0.75;
+    font-size: 1rem;
+    letter-spacing: 0.8px;
+    line-height: 1.3;
+}
+
+.forth-section-card-link {
+    color: #126eb9;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+
+/* -------------------------- Forth section ends --------------------------- */
+
+
+/* -------------------------- Footer starts --------------------------- */
 
 footer {
     background-color: #eeeeee;
@@ -704,85 +942,4 @@ footer {
     font-size: 0.85rem;
 }
 
-/* ---------------------------- Footer ends here ------------------------------- */
-
-
-/* ---------------------------- Third section starts here ------------------------------- */
-
-.third-section {
-    padding: 75px 15px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: #fafafa;
-}
-
-.third-section-inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 80px;
-    width: 100%;
-    max-width: 950px;
-}
-
-.third-section-inner-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.third-section-inner-text-label {
-    opacity: 0.75;
-    letter-spacing: 1px;
-}
-
-.third-section-inner-text-title {
-    font-size: 2.2rem;
-    font-weight: 500;
-    letter-spacing: 1px;
-}
-
-.third-section-inner-cards {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
-}
-
-.third-section-inner-card {
-    width: 280px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.third-section-inner-card>img {
-    width: 85%;
-}
-
-.third-section-inner-card-details {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    background-color: white;
-    padding: 18px 25px;
-    box-shadow: rgba(147, 147, 147, 0.4) 0px 1px 12px 1px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-}
-
-.third-section-inner-card-title {
-    letter-spacing: 1px;
-    font-weight: 420;
-}
-
-.third-section-inner-card-desc {
-    letter-spacing: 0.5px;
-    font-size: 0.9rem;
-    line-height: 1.4;
-    opacity: 0.8;
-}
+/* ---------------------------- Footer ends ------------------------------- */
