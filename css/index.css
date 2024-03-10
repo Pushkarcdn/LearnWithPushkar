@@ -1,3 +1,5 @@
+/* variables */
+
 :root {
     --black-shade: #312f2f;
     --green-shade: #84dccf;
@@ -6,6 +8,8 @@
     --brown-shade: #bf98a0;
     --items-color: #304db2;
 }
+
+/* selecting all elements */
 
 * {
     margin: 0;
@@ -19,6 +23,8 @@
     scroll-behavior: smooth;
 }
 
+/* selecting particular type of elements */
+
 a {
     text-decoration: none;
     color: black;
@@ -30,6 +36,8 @@ a:hover {
     scale: 1.02;
 }
 
+/* classes for font family */
+
 .poppins {
     font-family: Poppins, sans-serif;
 }
@@ -38,14 +46,18 @@ a:hover {
     font-family: Varela, sans-serif;
 }
 
+/* styles for body */
+
 body {
     min-width: 300px;
     width: 100%;
-    height: 400vh;
+    /* height: 400vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+/* -------------------------- Header starts here --------------------------- */
 
 header {
     background-color: rgb(243, 243, 243);
@@ -95,8 +107,12 @@ header {
     display: none;
 }
 
+/* -------------------------- Header ends here --------------------------- */
+
+
+/* -------------------------- Mobile nav starts here --------------------------- */
+
 .mobile-nav {
-    /* border: 2px solid red; */
     padding: 30px 20px;
     height: 100%;
     width: 80%;
@@ -139,9 +155,6 @@ header {
 }
 
 .mobile-nav-links {
-    /* border: 2px solid red; */
-
-    /* min-height: 200px; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -169,6 +182,11 @@ header {
     background-color: #304db2;
     color: white;
 }
+
+/* -------------------------- Mobile nav ends here --------------------------- */
+
+
+/* -------------------------- Desktop nav starts here --------------------------- */
 
 nav {
     height: 65px;
@@ -218,11 +236,15 @@ nav i {
     display: flex;
 }
 
+
+/* -------------------------- Desktop nav ends here --------------------------- */
+
+
+/* -------------------------- Hero Section starts here --------------------------- */
+
 #hero-section {
-    /* border: 2px solid red; */
     width: 100%;
     min-height: 500px;
-    /* padding: 0px 10%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -272,27 +294,9 @@ nav i {
 
 .hero-section-left-courses-link {
     display: flex;
-    align-items: center;
     gap: 10px;
     padding: 20px 0px;
     font-size: 0.9rem;
-}
-
-.hero-section-btn {
-    margin: 25px 0px;
-    width: 150px;
-    display: inline;
-    /* height: 45px; */
-    background-color: transparent;
-    transition: all 0.1s ease-in;
-    outline: none;
-    border: none;
-    text-align: left;
-}
-
-.hero-section-btn:hover {
-    /* background-color: #312f2f; */
-    /* color: white; */
 }
 
 .hero-section-right {
@@ -316,20 +320,18 @@ nav i {
     opacity: 0.75;
 }
 
-/* -------------------------------------------------- */
+/* -------------------------- Hero Section ends here --------------------------- */
 
 
-/* -------------------------------------------------- */
+/* -------------------------- Second Section ends here --------------------------- */
 
 .second-section {
-    /* border: 2px solid; */
-    padding: 75px 0px;
+    padding: 75px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    /* width: 80%; */
+    gap: 75px;
 }
 
 .second-section-top {
@@ -376,7 +378,6 @@ nav i {
 }
 
 .second-section-card {
-    /* border: 2px solid; */
     min-height: 320px;
     width: 300px;
     padding: 35px 15px;
@@ -435,12 +436,15 @@ nav i {
 }
 
 .second-section-bottom {
-    /* border: 2px solid red; */
-    display: none;
+    padding: 70px 0px;
+    box-shadow: rgba(147, 147, 147, 0.4) 0px 1px 15px 1px;
+    display: flex;
+    width: 90%;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 50px;
+    border-radius: 4px;
 }
 
 .second-section-bottom-right {
@@ -453,20 +457,90 @@ nav i {
 .second-section-bottom-right-title-div {
     display: flex;
     flex-direction: column;
-    /* gap: 10px; */
+    gap: 10px;
 }
 
+.second-section-bottom-right-label {
+    opacity: 0.6;
+}
 
-
-
+.second-section-bottom-right-title {
+    line-height: 0.95;
+    font-size: 1.6rem;
+    opacity: 0.9;
+    font-weight: 500;
+}
 
 .second-section-bottom-right-link-div {
     display: flex;
-    gap: 45px;
+    gap: 25px;
+}
+
+.second-section-bottom-right-link-div>a {
+    padding: 2px 0px;
+    opacity: 0.8;
+    color: #126eb9;
+}
+
+.second-section-bottom-right-link-div>a:hover {
+    color: #003e71;
+}
+
+.second-section-bottom-right-desc-div {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 20px;
+    opacity: 0.65;
+}
+
+.second-section-bottom-right-desc-div>* {
+    line-height: 1.5;
+}
+
+.second-section-bottom-price-div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.second-section-bottom-price-div>hr {
+    width: 90%;
+    opacity: 0.4;
+}
+
+.second-section-bottom-price-div-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.second-section-bottom-price-div-text>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.second-section-bottom-new-price {
+    font-size: 1.3rem;
+}
+
+.second-section-bottom-old-price {
+    font-size: 1rem;
+    text-decoration: line-through;
+}
+
+.second-section-bottom-discount {
+    font-size: 1.08rem;
+    color: green;
+}
+
+.second-section-bottom-tax {
+    font-size: 0.8rem;
+    opacity: 0.65;
 }
 
 .second-section-bottom-btn {
-    margin: 25px 0px;
     width: 150px;
     height: 45px;
     background-color: transparent;
@@ -478,3 +552,5 @@ nav i {
     background-color: #312f2f;
     color: white;
 }
+
+/* -------------------------- Second Section ends here --------------------------- */
