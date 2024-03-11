@@ -25,3 +25,17 @@ function closeMobileNav() {
 }
 
 // openMobileNav();
+
+
+// -------------------------------------- Fifth section card expand -------------------------------------
+
+const divExpandButton = document.querySelectorAll('.fifth-section-inner-left-card-title-div');
+
+const divToExpand = document.querySelectorAll('.fifth-section-inner-left-card-desc-div');
+
+function expandDiv(i) {
+
+    divToExpand[i].classList.toggle('expanded-div');
+    divExpandButton[i].classList.toggle('expand-div-clicked');
+
+}
