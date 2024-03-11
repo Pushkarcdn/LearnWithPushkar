@@ -1,4 +1,4 @@
-// -------------------------------------- searchbox on desktop -------------------------------------
+// -------------------------------------- search-box on desktop -------------------------------------
 
 const searchExpandedDiv = document.querySelector('.search-expanded-div');
 const navSearchButton = document.querySelector('.nav-search-button-div');
@@ -39,3 +39,24 @@ function expandDiv(i) {
     divExpandButton[i].classList.toggle('expand-div-clicked');
 
 }
+
+
+// footer form
+
+const messageBox = document.querySelector('.message-box-bottom');
+const messageBoxText = document.querySelector('.message-box-text');
+
+document.querySelectorAll('form').forEach(form => {
+    form.addEventListener('submit', (e) => {
+
+        e.preventDefault();
+
+        messageBox.style.display = 'flex';
+        form['newsletter-email'].value='';
+
+        setTimeout(() => {
+            messageBox.style.display = 'none';
+        }, 3000);
+
+    })
+});

@@ -74,6 +74,10 @@ header {
     z-index: 1;
 }
 
+.header-logo:hover {
+    scale: 1;
+}
+
 .header-left {
     display: flex;
     justify-content: center;
@@ -258,6 +262,10 @@ nav i {
     background-color: #fafafa;
 }
 
+#hero-section:hover {
+    scale: 1 !important;
+}
+
 .hero-section-main-div {
     display: flex;
 }
@@ -293,6 +301,7 @@ nav i {
     background: linear-gradient(to right, rgb(54, 54, 54), rgb(129, 129, 129));
     color: transparent;
     background-clip: text;
+    -webkit-background-clip: text;
 }
 
 .hero-section-left-courses-link {
@@ -391,6 +400,12 @@ nav i {
     gap: 40px;
     box-shadow: rgba(147, 147, 147, 0.4) 0px 1px 15px 1px;
     border-radius: 6px;
+    transition: all 0.25s ease-in-out;
+}
+
+.second-section-card:hover {
+    scale: 1.018;
+    transform: translateY(-6px);
 }
 
 .second-section-card>img {
@@ -468,10 +483,14 @@ nav i {
 }
 
 .second-section-bottom-right-title {
-    line-height: 0.95;
+    line-height: 1.2;
+    font-weight: 550;
     font-size: 1.6rem;
     opacity: 0.9;
-    font-weight: 500;
+    color: transparent;
+    background: linear-gradient(to right, rgb(54, 54, 54), rgb(129, 129, 129));
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .second-section-bottom-right-link-div {
@@ -492,7 +511,7 @@ nav i {
 .second-section-bottom-right-desc-div {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 70%;
     gap: 20px;
     opacity: 0.65;
 }
@@ -525,7 +544,8 @@ nav i {
 }
 
 .second-section-bottom-new-price {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.2px;
 }
 
 .second-section-bottom-old-price {
@@ -534,7 +554,7 @@ nav i {
 }
 
 .second-section-bottom-discount {
-    font-size: 1.08rem;
+    font-size: 1rem;
     color: green;
 }
 
@@ -605,10 +625,17 @@ nav i {
 }
 
 .third-section-inner-card {
+    padding: 16px 0px 0px 0px;
     width: 280px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 6px;
+    transition: all 0.25s ease-in-out;
+}
+
+.third-section-inner-card:hover {
+    box-shadow: rgba(147, 147, 147, 0.4) 0px 1px 15px 1px;
 }
 
 .third-section-inner-card>img {
@@ -722,7 +749,9 @@ nav i {
 }
 
 .forth-section-card-1 {
-    background-image: url("../public/images/encryption.jpeg");
+    background-image: url("../public/images/online-store.jpeg");
+    background-position: top;
+    border: 2px solid #eeeeee;
 }
 
 .forth-section-card-2 {
@@ -881,6 +910,7 @@ footer {
 .footer-subs-column {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 40px;
     max-width: 300px;
 }
@@ -929,6 +959,24 @@ footer {
 
 .newsletter-email-submit-btn:hover {
     background-color: #00438f;
+}
+
+.message-box-bottom {
+    align-self: center;
+    padding: 12px 25px;
+    background-color: #bae7d2;
+    color: #0a944a;
+    border-radius: 4px;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.2s ease-in-out;
+    font-size: 0.95rem;
+    text-align: center;
+    display: none;
+    /* initial state is display none */
 }
 
 .footer-lower {
@@ -1081,3 +1129,43 @@ footer {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
 }
+
+/* ---------------------------- Fifth section ends ------------------------------- */
+
+/* ---------------------------- Sixth section starts ------------------------------- */
+
+.sixth-section {
+    padding: 50px 15px;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sixth-section-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.sixth-section-title {
+    letter-spacing: 1.5px;
+    font-size: 2.3rem;
+    font-weight: 620;
+    background: linear-gradient(to right, rgb(54, 54, 54), rgb(129, 129, 129));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.sixth-section-bottom{
+    border: 2px solid gray;
+    height: 450px;
+    width: 1150px;
+}
+
+/* ---------------------------- Sixth section ends ------------------------------- */
