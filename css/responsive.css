@@ -124,6 +124,12 @@
         font-size: 0.8rem;
     }
 
+    /* sixth section  */
+
+    .sixth-section {
+        display: none;
+    }
+
     /* footer   */
 
     footer span,
@@ -146,7 +152,7 @@
         width: 250px;
     }
 
-    .footer-column-div > img {
+    .footer-column-div>img {
         width: 260px;
     }
 
